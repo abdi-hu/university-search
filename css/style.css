@@ -1,8 +1,6 @@
 body {
     height: 100%;
-    background-color: aqua;
-
-
+    background-image: url("/imgs/background.jpg");
 }
 header {
     border: 2px solid;
@@ -31,5 +29,3 @@ footer {
     border: 2px solid;
     width: 400px;
 }
-.search
-

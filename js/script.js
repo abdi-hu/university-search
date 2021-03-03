@@ -1,5 +1,6 @@
 let univData = {};
 
+//
 const $webPage = $('.webPage');
 const $country = $('.country');
 const $input = $('#input')
@@ -18,8 +19,8 @@ function handleSubmit(evt) {
     let $searchTerm = $input.val()
     $.ajax(BASE_URL + $searchTerm).then(function (data) {
         univData = data;
+        //function to render the content on the page
         render();
-        console.log(univData)
         //If error is returned
     }, function (error) {
         console.log('Error ', error);
@@ -28,16 +29,17 @@ function handleSubmit(evt) {
 function render() {
     let row = ``
     $.each(univData, (index, univ) => {
-        row += `
-        <div class="univ">
-        <h3 class="name">${univ.name}</h3>
-        <div>
-            <p class="webPage">${univ.web_pages}</p>
-            <p class="country">${univ.country}</p>
+        row +=
+            `
+        <div class="card border-success mb-3" style="max-width: 20rem;">
+            <div class="card-header">${univ.country}</div>
+                <div class="card-body">
+                    <h4 class="card-title">${univ.name}</h4>
+                    <p class="card-text"><a href="${univ.web_pages}" target="_blank">Website</a></p>
+                </div>
+            </div>
         </div>
-        </div>
-        `;
+        `
     });
     $('.container').html(row);
 }
-
