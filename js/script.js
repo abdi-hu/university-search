@@ -6,6 +6,8 @@ const $country = $('.country');
 const $input = $('#input')
 const $name = $('.name')
 const $container = $('.container');
+const $selCountry = $('#selCountry')
+
 
 
 const BASE_URL = 'http://universities.hipolabs.com/search?name='
@@ -17,7 +19,9 @@ $('form').on('submit', handleSubmit);
 function handleSubmit(evt) {
     evt.preventDefault();
     let $searchTerm = $input.val()
-    $.ajax(BASE_URL + $searchTerm).then(function (data) {
+    let $cnt = `&country=${$selCountry.val()}`
+
+    $.ajax(BASE_URL + $searchTerm + $cnt).then(function (data) {
         univData = data;
         //function to render the content on the page
         render();
