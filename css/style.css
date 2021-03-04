@@ -3,8 +3,9 @@ body {
     background-image: url("/imgs/background.jpg");
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content: cover;
     flex-direction: column;
+    background-repeat:no-repeat
 }
 header {
     text-align: center;
@@ -14,11 +15,14 @@ header {
     display: flex;
     justify-content: center;
 }
-.container {
+#container {
     margin-top: 5%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
+.card {
+    background-color: rgba(160, 172, 184, 0.564);
+    color: rgb(69, 2, 2);
+}
