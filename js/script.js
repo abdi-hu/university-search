@@ -11,7 +11,7 @@ $(function () {
 
 
     //Base url used with ajax request
-    const BASE_URL = 'https://universities.hipolabs.com/search?name='
+    const BASE_URL = 'http://universities.hipolabs.com/search?name='
 
     //Event listener for submiting the search
     $('form').on('submit', handleSubmit);
