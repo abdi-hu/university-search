@@ -3,13 +3,13 @@
 A web app that allows you to search for different univeristies and colleges accross and link to their respective websites.
 
 ## 📸 Screenshots
-![screenshot1](./imgs/screenshot1.png)
+![screenshot1](./imgs/screenshot.png)
 ## Technologies used
 - HTML5
 - CSS3
 - Javascript
 - JQuery
-- Bootstrap CSS
+- [Bootstrap CSS](https://bootswatch.com/sketchy/)
 - [University Domains and Names Data List API](https://github.com/Hipo/university-domains-list)
 
 ## Feature
@@ -25,5 +25,9 @@ A web app that allows you to search for different univeristies and colleges accr
 3. Enter your keywork in the search box and filter the country you want to search in.
 
 ### Future Enhancements 
-- Pagination for the list of schools
+- Dynamically load country drop down based on API data
+- Discription for each university 
+- Images for each school
+- Country Flags
+
 
