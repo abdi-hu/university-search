@@ -4,6 +4,7 @@ A web app that allows you to search for different univeristies and colleges accr
 
 ## 📸 Screenshots
 ![screenshot1](./imgs/screenshot.png)
+
 ## Technologies used
 - HTML5
 - CSS3
