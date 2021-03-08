@@ -3,7 +3,7 @@
 A web app that allows you to search for different univeristies and colleges accross and link to their respective websites.
 
 ## 📸 Screenshots
-![screenshot1](./imgs/screenshot.png)
+![screenshot](./imgs/screenshot.png)
 
 ## Technologies used
 - HTML5
